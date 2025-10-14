@@ -1,0 +1,103 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    
+    color: #e8eaed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+#calculator{
+
+    font-family: 'Roboto' , sans-serif;
+
+ background: #2d2e30;
+
+    /* background-color: hsl(0, 0%, 15%);
+*/
+    border-radius: 15px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+           
+                display: flex;
+                    flex-direction: column;
+                        gap: 12px;
+
+    max-width: 500px;
+
+    overflow: hidden;
+
+}
+
+#display{
+
+    width: 100%;
+
+    padding: 20px;
+
+    font-size: 3rem;
+
+    text-align: left;
+
+    border: none;
+
+    background-color: hsl(0, 0%, 20%);
+
+    color: white;
+
+}
+
+#keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    padding: 25px;
+}
+
+button {
+    border: none;
+    border-radius: 4px;
+    font-size: 2.5rem;
+    height: 100px;
+    width: 100px;
+    cursor: pointer;
+    transition: background 0.2s;
+        background: #3c4043;
+    color: #e8eaed;
+}
+
+button:active {
+     background: #8ab4f8;
+    color: #202124;
+    font-weight: bold;
+}
+
+.operator-btn {
+    background: #5f6368;
+    color: #e8eaed;
+}
+
+.operator-btn:active {
+    background: #4c5257;
+}
+
+/*button:nth-child(17) {
+    background: #8ab4f8;
+    color: #202124;
+    font-weight: bold;
+}*/
+
+button:nth-child(17):active {
+    background: #aecbfa;
+}
+
+/* Special buttons (C, %, Undo) */
+button.special {
+    background: #5f6368;
+    color: #e8eaed;
+}
+
+button.special:active {
+    background: #5f6368;
+    color: #e8eaed;
+}
